@@ -10,6 +10,28 @@
   </head>
 
   <body>
-    <%= yield %>
+
+    <nav class="navbar navbar-default bg-light">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand text-secondary" href="/articles">Wikinimous</a>
+        </div>
+        <div class="">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="/articles/new" class="text-secondary">New Article</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
